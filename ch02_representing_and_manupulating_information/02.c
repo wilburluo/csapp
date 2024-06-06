@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdint.h>
 #include <inttypes.h>
 #include <limits.h>
@@ -18,5 +18,6 @@ int main(void)
     int i1 = (-1 < 0U)?1:0; 
     int i2 = (-1 < 0)?1:0; 
     printf("%d\t%d\n", i1,i2);
+    printf("%d\n", 0x80000000);
     return 0;
 }
