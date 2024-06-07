@@ -1,10 +1,9 @@
-﻿#include <stdio.h>
-#include <stdint.h>
-#include <inttypes.h>
+﻿#include <inttypes.h>
 #include <limits.h>
+#include <stdint.h>
+#include <stdio.h>
 
-int main()
-{
+int main() {
     printf("char bit = %d\n", CHAR_BIT);
     printf("sizeof int = %zu\n", sizeof(int));
     printf("int max = %d\n", INT_MAX);

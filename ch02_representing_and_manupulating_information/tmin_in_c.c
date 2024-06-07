@@ -1,9 +1,9 @@
 ﻿#include <stdio.h>
 
-int main(void)
-{
-    int dpos32 = (-2147483648 > 0); //-X，负号属于整型常量的一部分！！！
-                                    //在C中整型常量部位负，所以前面出现符号，是对整型常量使用一元运算符.
+int main(void) {
+    int dpos32 = (-2147483648 > 0);
+    //-X，负号属于整型常量的一部分！！！
+    // 在C中整型常量部位负，所以前面出现符号，是对整型常量使用一元运算符
     int hpos32 = (0x80000000 > 0);
 
     printf("dpos32 = %d\n", dpos32);
@@ -17,8 +17,10 @@ int main(void)
     printf("dpos32_1 = %d\n", dpos32_1);
     printf("hpos32_1 = %d\n", hpos32_1);
 
-    printf("1L << sizeof(long) << 3 - 1 = %ld\n", 1L << sizeof(long) << 3 - 1); //problem 2
-    printf("1L << (sizeof(long) << 3) - 1 = %ld\n", 1L << (sizeof(long) << 3) - 1);
+    printf("1L << sizeof(long) << 3 - 1 = %ld\n",
+           1L << sizeof(long) << 3 - 1);  // problem 2
+    printf("1L << (sizeof(long) << 3) - 1 = %ld\n",
+           1L << (sizeof(long) << 3) - 1);
 
     return 0;
 }
